@@ -33,7 +33,8 @@ setup(
     packages=find_packages(exclude=['tests']),
     install_requires=None,
     extras_require={
-        'dev': ['mypy==0.600', 'pylint==1.8.4', 'yapf==0.20.2', 'tox>=3.0.0'],
+        'dev': ['mypy==0.600', 'pylint==1.8.4', 'yapf==0.20.2', 'tox>=3.0.0', 'temppathlib>=1.0.0'],
         'test': ['tox>=3.0.0', 'temppathlib>=1.0.0']
     },
-    py_modules=['posixfs'])
+    py_modules=['posixfs'],
+    package_data={"posixfs": ["py.typed"]})
