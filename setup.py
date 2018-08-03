@@ -17,7 +17,7 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='posixfs',
-    version='1.0.0',
+    version='1.0.1',
     description='provides atomic and durable writes on a posix file system.',
     long_description=long_description,
     url='https://github.com/Parquery/posixfs',
